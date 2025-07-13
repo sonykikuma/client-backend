@@ -11,7 +11,7 @@ app.use(express.json());
 initializeDatabase();
 
 app.get("/", (req, res) => {
-  res.send("Hello Inventory!");
+  res.send("Hello Client- add student data here and view it!");
 });
 
 //get route
