@@ -27,8 +27,8 @@ app.get("/client", async (req, res) => {
 //post route
 app.post("/client", async (req, res) => {
   try {
-    const { name, email, phone, className, course } = req.body;
-    if (!name || !email || !phone || !className || !course) {
+    const { name, email, phone, classBoard, course } = req.body;
+    if (!name || !email || !phone || !classBoard || !course) {
       return res.status(400).json({ message: "All fields are required" });
     }
 
@@ -36,7 +36,7 @@ app.post("/client", async (req, res) => {
       name,
       email,
       phone,
-      className,
+      classBoard,
       course,
     });
     await newClient.save();

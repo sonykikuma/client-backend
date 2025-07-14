@@ -12,7 +12,7 @@ const clientSchema = new mongoose.Schema(
     phone: {
       type: String,
     },
-    className: {
+    classBoard: {
       type: String,
     },
     course: {
